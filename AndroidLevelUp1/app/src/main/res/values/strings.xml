@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Android LevelUp</string>
+
+    <string name="home_button_old">relative/linear layout</string>
+    <string name="home_button_constraint">constraint layout</string>
+    <string name="home_button_styled">styled layout</string>
+
+    <string name="restaurant_avg_cost">avg cost</string>
+    <string name="restaurant_cousine">cousine</string>
+    <string name="restaurant_menu">menu</string>
+</resources>

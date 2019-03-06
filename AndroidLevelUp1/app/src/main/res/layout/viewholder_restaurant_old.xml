@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            tools:ignore="ContentDescription"
+            tools:src="@tools:sample/backgrounds/scenic"/>
+
+    <FrameLayout
+            android:id="@+id/arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/name"
+            android:layout_alignParentEnd="true">
+
+        <ImageView
+                android:id="@+id/arrowUp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_arrow_up"
+                android:tint="@color/colorAccent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                tools:ignore="ContentDescription"
+                android:visibility="visible"/>
+
+        <ImageView
+                android:id="@+id/arrowDown"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_arrow_down"
+                android:tint="@color/colorAccent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                tools:ignore="ContentDescription"
+                android:visibility="visible"
+                tools:visibility="visible"/>
+
+    </FrameLayout>
+
+    <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/image"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/arrows"
+            tools:text="@tools:sample/lorem/random"/>
+
+    <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"/>
+
+    <TextView
+            android:id="@+id/ratingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_alignBottom="@+id/ratingBar"
+            android:layout_toEndOf="@+id/ratingBar"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            tools:text="4.5 (99)"/>
+
+    <FrameLayout
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar">
+
+        <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/divider"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/avgCostTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="@string/restaurant_avg_cost"/>
+
+                <TextView
+                        android:id="@+id/avgCostValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/white"
+                        tools:text="amerykańska, burger"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/cuisineTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="@string/restaurant_cousine"/>
+
+                <TextView
+                        android:id="@+id/cuisineValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/white"
+                        tools:text="amerykańska, burger"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <Button
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_below="@+id/details"
+            android:layout_alignParentStart="true"
+            android:text="@string/restaurant_menu"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/details"
+            android:layout_alignParentEnd="true">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_image"
+                tools:ignore="ContentDescription"/>
+
+        <TextView
+                android:id="@+id/photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                tools:text="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
