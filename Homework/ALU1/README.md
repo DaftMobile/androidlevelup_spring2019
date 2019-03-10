@@ -10,5 +10,8 @@ Zadanie polega na zrealizowaniu widoku korzystając z kontenera ConstraintLayout
 - [MD Icons](https://material.io/tools/icons/) - zbiór ikon z Material Design. Możesz je również znaleźć w Android Studio: File -> New -> Vector Asset -> Clip Art -> klikamy podwójnie na ikonkę z Androidem.
 - [MD Color Palette](https://www.materialpalette.com) to ciekawe narzędzie, które pomoże Ci dobrać kolorystykę do Twojej aplikacji. Możesz tam znaleźć wykorzystywane kolory w zadaniu.
 
+## Termin
+Projekt (spakowany albo podlinkowany z repo) zawierający odtworzony layout należy wysłać na adres *android@daftacademy.pl* do **środy (13.03)** do godziny **12:00**. Powodzenia!
+
 ## Projekt
 ![layout](https://github.com/DaftMobile/androidlevelup_spring2019/tree/master/Homework/ALU1/layout.jpg)
