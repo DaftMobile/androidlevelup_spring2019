@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidLevelUp2</string>
+    <string name="view_animation_button_label">View animation</string>
+    <string name="property_animator_button_label">Property animator</string>
+    <string name="constraint_set_button_label">ConstraintSet</string>
+    <string name="spring_button_label">Spring animation</string>
+</resources>
