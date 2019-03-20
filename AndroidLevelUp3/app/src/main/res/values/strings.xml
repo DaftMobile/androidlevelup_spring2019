@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Android LevelUp</string>
+
+    <string name="home_button_fragment_xml">fragment xml</string>
+    <string name="home_button_fragment_transaction">fragment transaction</string>
+    <string name="home_button_navigation_drawer">navigation drawer</string>
+    <string name="home_button_bottom_navigation">bottom navigation</string>
+    <string name="home_button_tabs">tabs</string>
+
+    <string name="fragment_button_add">add fragment</string>
+
+    <string name="menu_home">home</string>
+    <string name="menu_users">users</string>
+    <string name="menu_camera">camera</string>
+    <string name="menu_fire">fire</string>
+    <string name="menu_settings">settings</string>
+</resources>

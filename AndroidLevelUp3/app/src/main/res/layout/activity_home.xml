@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/daftGray">
+
+    <ImageView
+            android:id="@+id/logoAndroidLevelUp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_androidlevelup"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="ContentDescription"/>
+
+    <Button
+            android:id="@+id/btnFragmentXml"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/home_button_fragment_xml"
+            app:layout_constraintTop_toBottomOf="@+id/logoAndroidLevelUp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+            android:id="@+id/btnFragmentTransaction"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/home_button_fragment_transaction"
+            app:layout_constraintTop_toBottomOf="@+id/btnFragmentXml"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+            android:id="@+id/btnNavigationDrawer"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/home_button_navigation_drawer"
+            app:layout_constraintTop_toBottomOf="@+id/btnFragmentTransaction"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+            android:id="@+id/btnBottomNavigation"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/home_button_bottom_navigation"
+            app:layout_constraintTop_toBottomOf="@+id/btnNavigationDrawer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+            android:id="@+id/btnTabs"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/home_button_tabs"
+            app:layout_constraintTop_toBottomOf="@+id/btnBottomNavigation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/logo_daftacademy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="ContentDescription"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
