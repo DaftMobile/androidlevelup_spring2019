@@ -14,7 +14,7 @@ Zadanie polega na przerobieniu załączonej aplikacji na tę widoczną na screen
 Projekt (spakowany albo podlinkowany z repo) zawierający odtworzony layout należy wysłać na adres *android@daftacademy.pl* do **środy (27.03)** do godziny **12:00**. Powodzenia!
 
 ## Projekt
-![screen1](https://raw.githubusercontent.com/DaftMobile/androidlevelup_spring2019/master/Homework/ALU3/1.jpg)
-![screen2](https://raw.githubusercontent.com/DaftMobile/androidlevelup_spring2019/master/Homework/ALU3/2.jpg)
-![screen3](https://raw.githubusercontent.com/DaftMobile/androidlevelup_spring2019/master/Homework/ALU3/3.jpg)
-![screen4](https://raw.githubusercontent.com/DaftMobile/androidlevelup_spring2019/master/Homework/ALU3/4.jpg)
+<img src="https://raw.githubusercontent.com/DaftMobile/androidlevelup_spring2019/master/Homework/ALU3/img/1.png" width="360" height="640">
+<img src="https://raw.githubusercontent.com/DaftMobile/androidlevelup_spring2019/master/Homework/ALU3/img/2.png" width="360" height="640">
+<img src="https://raw.githubusercontent.com/DaftMobile/androidlevelup_spring2019/master/Homework/ALU3/img/3.png" width="360" height="640">
+<img src="https://raw.githubusercontent.com/DaftMobile/androidlevelup_spring2019/master/Homework/ALU3/img/4.png" width="360" height="640">
