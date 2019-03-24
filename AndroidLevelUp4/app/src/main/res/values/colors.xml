@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0ad560</color>
+    <color name="colorPrimaryDark">#05af4d</color>
+    <color name="colorAccent">#0ad560</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="daftGray">#333333</color>
+    <color name="daftGreenLight">#0ad560</color>
+    <color name="daftGreenDark">#05af4d</color>
+
+    <color name="white">#ffffff</color>
+</resources>
