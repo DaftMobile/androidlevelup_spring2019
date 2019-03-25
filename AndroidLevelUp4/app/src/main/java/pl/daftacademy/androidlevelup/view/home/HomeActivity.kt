@@ -8,10 +8,14 @@ import androidx.core.view.GravityCompat
 import androidx.core.view.children
 import kotlinx.android.synthetic.main.activity_home.*
 import pl.daftacademy.androidlevelup.R
+import pl.daftacademy.androidlevelup.prefs.SharedUserPrefs
+import pl.daftacademy.androidlevelup.prefs.UserPrefs
 import pl.daftacademy.androidlevelup.view.add.AddActivity
 import pl.daftacademy.androidlevelup.view.movies.MoviesFragment
 
 class HomeActivity : AppCompatActivity() {
+
+    private val userPrefs: UserPrefs by lazy { SharedUserPrefs(this, R.id.action_all) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +27,7 @@ class HomeActivity : AppCompatActivity() {
             setDisplayHomeAsUpEnabled(true)
             setHomeAsUpIndicator(R.drawable.ic_menu)
         }
-        if (savedInstanceState == null) showPage(null)
+        if (savedInstanceState == null) changePage(nav.menu.findItem(userPrefs.startingPage))
     }
 
     override fun onOptionsItemSelected(item: MenuItem) =
@@ -47,6 +51,7 @@ class HomeActivity : AppCompatActivity() {
         }
         nav.menu.children.find { it.isChecked }?.isChecked = false
         item.isChecked = true
+        userPrefs.startingPage = item.itemId
         drawer.closeDrawers()
         return true
     }
