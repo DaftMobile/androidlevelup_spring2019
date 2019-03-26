@@ -8,10 +8,16 @@ import com.google.android.material.chip.Chip
 import kotlinx.android.synthetic.main.activity_add.*
 import pl.daftacademy.androidlevelup.R
 import pl.daftacademy.androidlevelup.view.viewmodel.AddViewModel
+import pl.daftacademy.androidlevelup.view.viewmodel.ViewModelFactory
 
 class AddActivity : AppCompatActivity() {
 
-    private val viewModel by lazy { ViewModelProviders.of(this)[AddViewModel::class.java] }
+    private val viewModel by lazy {
+        ViewModelProviders.of(
+            this,
+            ViewModelFactory(application)
+        )[AddViewModel::class.java]
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +25,7 @@ class AddActivity : AppCompatActivity() {
 
         addButton.setOnClickListener {
             viewModel.addMovie(getMovieTitle(), getMovieYear(), getMovieGenres())
+            finish()
         }
     }
 
@@ -27,7 +34,7 @@ class AddActivity : AppCompatActivity() {
         .filter(Chip::isChecked)
         .map(Chip::getText)
         .map(CharSequence::toString)
-        .map(String::toLowerCase)
+        .map(String::capitalize)
         .toList()
 
     private fun getMovieYear() = yearEditText.text.toString()

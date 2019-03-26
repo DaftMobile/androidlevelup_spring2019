@@ -21,6 +21,10 @@ class MoviesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         recyclerView.adapter = adapter
+    }
+
+    override fun onStart() {
+        super.onStart()
         val genre = arguments?.getString(GENRE_EXTRA)
         adapter.items = viewModel.getMovies(genre)
     }
@@ -30,7 +34,7 @@ class MoviesFragment : Fragment() {
         .get(MoviesViewModel::class.java)
 
     companion object {
-        const val GENRE_EXTRA = "GENRE_EXTRA"
+        private const val GENRE_EXTRA = "GENRE_EXTRA"
 
         fun create(genre: String?): MoviesFragment {
             val fragment = MoviesFragment()
