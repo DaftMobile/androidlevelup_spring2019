@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Movies LevelUp</string>
+
+    <string name="menu_all">All Movies</string>
+    <string name="menu_action">Action</string>
+    <string name="menu_comedy">Comedy</string>
+    <string name="menu_crime">Crime</string>
+    <string name="menu_horror">Horror</string>
+    <string name="menu_romance">Romance</string>
+    <string name="title_edit_hint">Enter movie title…</string>
+    <string name="year_edit_hint">Enter year…</string>
+    <string name="add_label">Add movie</string>
+    <string-array name="studios">
+        <item>19th Decade Fox</item>
+        <item>Balt Fisney</item>
+        <item>Sory Pictures</item>
+        <item>Cosmic Studios</item>
+    </string-array>
+
+</resources>

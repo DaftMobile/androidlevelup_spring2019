@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".view.add.AddActivity"
+        tools:targetApi="o">
+
+    <EditText android:layout_width="0dp" android:layout_height="wrap_content"
+              app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+              android:inputType="text|textCapWords"
+              android:hint="@string/title_edit_hint"
+              app:layout_constraintTop_toTopOf="parent" android:id="@+id/titleEditText"
+              android:importantForAutofill="no"/>
+
+    <EditText android:layout_width="0dp" android:layout_height="wrap_content"
+              app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+              android:inputType="number"
+              android:hint="@string/year_edit_hint"
+              app:layout_constraintTop_toBottomOf="@id/titleEditText" android:id="@+id/yearEditText"
+              android:importantForAutofill="no"/>
+
+    <com.google.android.material.chip.ChipGroup
+            android:id="@+id/genreChips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/yearEditText" app:singleSelection="false"
+            app:chipSpacing="8dp" android:layout_marginTop="16dp">
+
+        <com.google.android.material.chip.Chip android:id="@+id/chipAction" android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:text="@string/menu_action"/>
+
+        <com.google.android.material.chip.Chip android:id="@+id/chipComedy" android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:text="@string/menu_comedy"/>
+
+        <com.google.android.material.chip.Chip android:id="@+id/chipCrime" android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:text="@string/menu_crime"/>
+
+        <com.google.android.material.chip.Chip android:id="@+id/chipHorror" android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:text="@string/menu_horror"/>
+
+        <com.google.android.material.chip.Chip android:id="@+id/chipRomance" android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:text="@string/menu_romance"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <Spinner android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/genreChips"
+             android:layout_marginTop="8dp" android:entries="@array/studios" android:id="@+id/studioSpinner"/>
+
+    <Button
+            android:text="@string/add_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
