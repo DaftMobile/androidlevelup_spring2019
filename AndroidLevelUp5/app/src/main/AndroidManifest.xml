@@ -39,6 +39,12 @@
         <service android:name=".feature.service.ExampleBoundService"/>
         <service android:name=".feature.service.ExampleIntentService"/>
 
+        <service android:name=".feature.fcm.CloudMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
         <receiver
                 android:name=".feature.broadcast.ManifestDeclaredBroadcastReceiver"
                 android:exported="true">
