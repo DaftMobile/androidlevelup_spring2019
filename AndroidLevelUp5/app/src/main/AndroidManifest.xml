@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="pl.daftacademy.androidlevelup">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+            android:allowBackup="true"
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+                android:name=".feature.home.HomeActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".feature.service.ServiceActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".feature.broadcast.BroadcastActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".feature.work.WorkActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".feature.alarm.AlarmActivity"
+                android:screenOrientation="portrait"/>
+
+        <service android:name=".feature.service.ExampleForegroundService"/>
+        <service android:name=".feature.service.ExampleBackgroundService"/>
+        <service android:name=".feature.service.ExampleBoundService"/>
+        <service android:name=".feature.service.ExampleIntentService"/>
+
+        <receiver
+                android:name=".feature.broadcast.ManifestDeclaredBroadcastReceiver"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android LevelUp #5</string>
+
+    <string name="notification_channel_default_id">default</string>
+    <string name="notification_channel_default_name">Domyślne</string>
+
+
+</resources>
