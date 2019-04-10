@@ -33,4 +33,7 @@ dependencies {
     kapt "androidx.room:room-compiler:2.0.0"
     implementation "com.google.code.gson:gson:2.8.5"
     implementation 'androidx.appcompat:appcompat:1.0.2'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
 }
